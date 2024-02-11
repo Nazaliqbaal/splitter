@@ -1,0 +1,44 @@
+@import "src/styles/index";
+
+.info-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color;
+  margin-bottom: 73px;
+}
+
+.info-row-label {
+  font-size: $font-size-base;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: $white-shade;
+}
+
+.info-row-labelSuffix {
+  font-size: $font-size-base;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: $text-color-light;
+}
+
+.info-row-value {
+  font-weight: 700;
+  font-size: $font-size-xl;
+  line-height: 1.5;
+  text-align: right;
+  color: $secondary-color;
+}
+
+.info-row-container {
+  margin-right: 166px;
+}
+@media (max-width: 768px) {
+  .info-row {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .info-row-value {
+    overflow-wrap: anywhere;
+  }
+}

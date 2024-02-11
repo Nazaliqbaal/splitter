@@ -1,0 +1,17 @@
+@import "src/styles/index";
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background: $primary-color;
+    border-radius: $border-radius-lg;
+    margin-top: 61px;
+    padding: 60px 56px 56px 56px;    
+}
+@media(max-width:768px){
+    .card-container{
+        margin-top: 0px;
+    }
+}
+
+

@@ -1,0 +1,49 @@
+@import "src/styles/index";
+
+.tip-calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px $spacing-medium;
+}
+
+.tip-calculator-input {
+  margin-top: 67px;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: $spacing-medium 0;
+  margin-top: 200px;
+  border: none;
+  border-radius: $border-radius-md;
+  font-size: $font-size-md;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+  align-items: center;
+  background-color: $reset-background;
+}
+
+.filled {
+  background-color: $reset-filled;
+  color: $primary-color;
+}
+@media (max-width: 768px) {
+  .tip-calculator-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 33px 36px 32px;
+    gap: 0px;
+  }
+  .reset-btn {
+    margin-top: 0px;
+  }
+  .tip-calculator-display {
+    width: 100%;
+  }
+  .tip-calculator-input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+<div class="tip-calculator-container">
+  <div class="tip-calculator-input">
+    <app-input-field
+      [(ngModel)]="billVal"
+      (ngModelChange)="onChangeBill($event)"
+      icon="assets/dollar.png"
+      label="Bill"
+    ></app-input-field>
+    <app-tip-select
+      [tipValue]="tipVal"
+      [label]="'Select Tip %'"
+      (onTipChange)="handleTip($event)"
+    ></app-tip-select>
+    <app-input-field
+      [(ngModel)]="peopleVal"
+      (ngModelChange)="onChangePeople($event)"
+      icon="assets/people-icon.png"
+      label="Number of People"
+    ></app-input-field>
+  </div>
+  <div class="tip-calculator-display">
+    <app-card>
+      <app-info-row
+        [label]="'Tip Amount'"
+        [labelSuffix]="'/ Person'"
+        [valueUnit]="'$'"
+        [value]="tipAmountPerPerson"
+      ></app-info-row>
+      <app-info-row
+        [label]="'Total'"
+        [labelSuffix]="'/ Person'"
+        [valueUnit]="'$'"
+        [value]="totalPerPerson"
+      ></app-info-row>
+      <div class="btn-container">
+        <button
+          [class.filled]="hasValues()"
+          (click)="reset()"
+          class="reset-btn"
+        >
+          RESET
+        </button>
+      </div>
+    </app-card>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="tip-select">
+  <label class="tip-select-label">{{ label }}</label>
+  <div class="tip-selection">
+    <app-button
+      *ngFor="let tip of tips"
+      [label]="tip.value"
+      [active]="tip.value === tipValue"
+      (clicked)="handleValuetip(tip.value)"
+    ></app-button>
+    <div class="custom-tip-container">
+      <app-input-field
+        [validate]="false"
+        [textAlign]="'center'"
+        [(ngModel)]="customTipValue"
+        (ngModelChange)="onChange()"
+        inputPlaceholder="Custom"
+      ></app-input-field>
+    </div>
+  </div>
+</div>

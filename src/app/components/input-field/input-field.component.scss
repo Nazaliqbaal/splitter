@@ -1,0 +1,53 @@
+@import "src/styles/index";
+
+label {
+  font-weight: 700;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: $text-color;
+}
+
+.red-border {
+  border: 1px solid $error;
+}
+input {
+  
+  display: block;
+  width: 100%;
+  color: $text-color-light;
+  text-align: right;
+  font-size: $font-size-lg;
+  line-height: 1.5;
+  border-radius: $border-radius;
+  background-size: 20px 20px;
+  background-position: $spacing-normal center;
+  background-repeat: no-repeat;
+  outline: none;
+  margin-top: $spacing-medium;
+  border: none;
+  padding: $spacing-small;
+}
+
+span {
+  float: right;
+  color: $error;
+}
+
+.input-field {
+  max-width: 524px;
+  background-repeat: no-repeat;
+  margin-bottom: 56px;
+}
+
+.dollar-sign {
+  position: absolute;
+  top: 84px;
+  left: 30px;
+}
+
+@media (max-width: 768px) {
+  .input-field {
+    max-width: 100%;
+  }
+}

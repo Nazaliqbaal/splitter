@@ -1,0 +1,17 @@
+<div class="input-field">
+  <div class="label-text">
+    <label for="">{{ label }}</label>
+    <span *ngIf="hasError">Can't be zero</span>
+  </div>
+
+  <input
+    [style.backgroundImage]="'url(' + icon + ')'"
+    [value]="value"
+    [ngClass]="{ 'red-border': hasError }"
+    [placeholder]="inputPlaceholder"
+    [style.text-align]="textAlign"
+    (input)="onInput($event)"
+    class="input-field"
+    type="text"
+  />
+</div>

@@ -1,0 +1,23 @@
+@import "src/styles/index";
+
+.button{
+    width: 100%;
+}
+
+.tip-button-label {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    color: $splitter-white;
+    width: 159px;
+    height: $spacing-small 0px;
+    padding: $spacing-normal;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+}
+
+.active {
+    background-color: $secondary-color;
+}

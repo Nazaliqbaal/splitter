@@ -1,0 +1,64 @@
+@import "src/styles/index";
+
+.tip-select {
+  max-width: 555.83px;
+}
+
+.tip-select-label {
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.tip-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.tip-select-button {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: $splitter-white;
+  width: 159px;
+  margin-top: 24px;
+  border: none;
+  border-radius: $border-radius;
+  padding: $spacing-normal;
+  background-color: $primary-color;
+}
+
+.tip-select-custom {
+  font-size: $font-size-md;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  background: $splitter-white;
+  color: $text-color;
+  width: 159px;
+  border-radius: $border-radius;
+  padding: $spacing-small 0px;
+}
+.custom-tip-container{
+  margin-top: -10px;
+}
+
+.active {
+  background-color: $secondary-color;
+}
+.custom-tip-container {
+  width: 168px;
+}
+
+
+@media (max-width: 768px) {
+  .tip-select {
+    max-width: 100%;
+  }
+}
